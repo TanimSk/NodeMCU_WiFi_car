@@ -55,7 +55,7 @@ void setup()
   
   lcd.init();
   lcd.backlight();
-  setCursor(5,0);
+  lcd.setCursor(5,0);
   lcd.print("Started");
   delay(1000);
   lcd.clear();
@@ -104,8 +104,8 @@ void loop()
     digitalWrite(D7, LOW);
     digitalWrite(D8, LOW);
   }
-  setCursor(0, 0);
+  lcd.setCursor(0, 0);
   lcd.print(edit_1);
-  setCursor(0, 1);
+  lcd.setCursor(0, 1);
   lcd.print(edit_2);
 }
